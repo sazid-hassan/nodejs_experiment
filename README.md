@@ -1,2 +1,1 @@
-run script with
-	node events.js
+run script with "node events.js"
