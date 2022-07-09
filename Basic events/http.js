@@ -2,8 +2,18 @@ const http = require('http');
 const { Socket } = require('net');
 
 const server = http.createServer((req, res) => {
-    res.write("NodeJs Activated");
-    res.end();
+    if (req.url === "/") {
+        res.write("NodeJs Activated");
+        res.end();
+    }
+    else if (req.url === "/about") {
+        res.write("About Page!")
+        res.end();
+    }
+    else {
+        res.write("Not Found!");
+        res.end();
+    }
 });
 
 // server.on("connection", () => {
