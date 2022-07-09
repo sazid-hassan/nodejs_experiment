@@ -1,1 +1,1 @@
-# nodejs_experiment
+run script with "node events.js"
